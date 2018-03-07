@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.allanakshay.test.MainActivity"
+    tools:showIn="@layout/activity_main"
+    android:padding="30sp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Username"
+        android:padding="10sp"
+        android:textSize="10sp"
+        android:id="@+id/Login_Username_textview"
+        android:layout_centerHorizontal="true"
+        android:layout_alignLeft="@id/Login_Username_edittext"
+        android:textColor="@color/colorPrimaryDark"
+        android:layout_marginTop="10sp"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Login_Username_textview"
+        android:id="@+id/Login_Username_edittext"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Password"
+        android:padding="10sp"
+        android:textSize="10sp"
+        android:id="@+id/Login_Password_textview"
+        android:layout_centerHorizontal="true"
+        android:layout_alignLeft="@id/Login_Username_edittext"
+        android:layout_below="@id/Login_Username_edittext"
+        android:textColor="@color/colorPrimaryDark"
+        android:layout_marginTop="10sp"/>
+
+    <EditText
+        android:inputType="textPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Login_Password_textview"
+        android:id="@+id/Login_Password_edittext"
+        />
+
+    <Button
+        android:layout_marginTop="10sp"
+        android:id="@+id/Login_Button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Login_Password_edittext"
+        android:text="Login"
+        android:background="@drawable/buttonshape"
+        android:textColor="@color/colorAccent"/>
+</RelativeLayout>
